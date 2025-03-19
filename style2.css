@@ -362,7 +362,16 @@ nav ul.active {
 }
 
 
+.feedback-item {
+    margin-bottom: 20px;  /* Отступ между отзывами */
+    border: 1px solid #ccc;  /* Рамка вокруг отзыва */
+    padding: 10px;
+    border-radius: 5px;
+}
 
+.feedback-text {
+    margin-bottom: 10px;  /* Отступ между текстом и видео */
+}
 
 .delete-button {
     margin-left: 10px; 
