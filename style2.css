@@ -362,42 +362,6 @@ nav ul.active {
 }
 
 
-nav ul {
-    display: none; /* Скрываем меню по умолчанию на маленьких экранах */
-    flex-direction: column; /* Располагаем элементы вертикально */
-    width: 100%; /* Занимает всю ширину */
-    text-align: center; /* Выравниваем текст по центру */
-}
-
-.menu-toggle {
-    display: block; /* Показываем кнопку-гамбургер на маленьких экранах */
-    cursor: pointer;
-    padding: 10px;
-    background-color: #333; /* Пример фона */
-    color: white;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-nav ul.active {
-    display: flex; /* Показываем меню, когда есть класс .active */
-}
-
-/* Стили для больших экранов (если нужно) */
-@media (min-width: 768px) {
-    nav ul {
-        display: flex; /* Показываем меню на больших экранах */
-        flex-direction: row; /* Располагаем элементы горизонтально */
-        width: auto; /* Автоматическая ширина */
-        text-align: left; /* Выравниваем текст слева */
-    }
-
-    .menu-toggle {
-        display: none; /* Скрываем кнопку-гамбургер на больших экранах */
-    }
-}
-
-
 
 
 .delete-button {
