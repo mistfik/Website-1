@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный бизнес-ассистент PBA</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        .main-content {
+            display: flex;
+            min-height: calc(100vh - (/* Adjust this value to match your header and footer heights */ 250px)); 
+        }
+        .left-section {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #38147a; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center; 
+        }
+        .right-section {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #38147a; 
+            text-align: center; 
+        }
+        .left-section a { 
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #38147a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .left-section a:hover {
+            background-color: #000000;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/img/logo2.png" alt="Логотип PBA">
+                    PBA
+                </a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="услуги.html">Отзывы</a></li>
+                    <li><a href="о_нас.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <section class="left-section">
+                <div class="section-title">Бесплатная версия</div>
+<iframe id="map_931813561" frameborder="0" width="100%" height="600px" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_931813561", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImRlc2NyaXB0aW9uIjoiUEhBKzRvQ2MwS1BSanRHQzBMM1JpOUM1SU5HRDBMUFF2dEM3MEw3UXV1S0FuVHd2Y0Q0PSIsInN0cm9rZUNvbG9yIjoiIzAwZmYxMCIsInN0cm9rZVdpZHRoIjoyLCJzdHJva2VPcGFjaXR5IjoxLCJmaWxsQ29sb3IiOiIjMGJmZjA4IiwiZmlsbE9wYWNpdHkiOjAuNSwicmFkaXVzIjo4My4yODAzNTk5NDYwMTUzMSwiekluZGV4IjoxfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOls2NS41NDk5OTEsNTcuMTUyODYzXX0sImlkIjoxMzI0fSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJkZXNjcmlwdGlvbiI6IlBIQSs0b0NjMEpmUXRkQzcwTFhRdmRHTDBMa2cwTHZRdU5HQjBZTGlnSjNpZ0p3OEwzQSsiLCJzdHJva2VDb2xvciI6IiM0ZGI3MjUiLCJzdHJva2VXaWR0aCI6Miwic3Ryb2tlT3BhY2l0eSI6MSwiZmlsbENvbG9yIjoiIzY1ZDYzOSIsImZpbGxPcGFjaXR5IjowLjUsInJhZGl1cyI6OTMuNDA5ODI5NTEyMjE1NzQsInpJbmRleCI6Mn0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbNjUuNTU4ODMyLDU3LjE1NDM0MV19LCJpZCI6MTM1Mn0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGVzY3JpcHRpb24iOiJQSEErNG9DYzBLRFF1TkdDMEx6aWdKMDhMM0ErIiwic3Ryb2tlQ29sb3IiOiIjNGRiNzI1Iiwic3Ryb2tlV2lkdGgiOjIsInN0cm9rZU9wYWNpdHkiOjEsImZpbGxDb2xvciI6IiM2NWQ2MzkiLCJmaWxsT3BhY2l0eSI6MC41LCJyYWRpdXMiOjEwNy4xMTA1NTE2MDM5NzE1NywiekluZGV4IjozfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOls2NS41NjE0MDcsNTcuMTUwNDg5XX0sImlkIjoxNTkzfSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJkZXNjcmlwdGlvbiI6IlBIQSs0b0NjMEszUXN0R0EwTGpRdXRDdzRvQ2RQQzl3UGc9PSIsInN0cm9rZUNvbG9yIjoiIzRkYjcyNSIsInN0cm9rZVdpZHRoIjoyLCJzdHJva2VPcGFjaXR5IjoxLCJmaWxsQ29sb3IiOiIjNjVkNjM5IiwiZmlsbE9wYWNpdHkiOjAuNSwicmFkaXVzIjoxMTEuMDU5MTM2MDg1MjQ0MTMsInpJbmRleCI6NH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbNjUuNTU0Nzk4LDU3LjE0NzI0MV19LCJpZCI6MTY2NX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGVzY3JpcHRpb24iOiJQSEErMEpyUXZ0QzkwTHJSZzlHQTBMWFF2ZEdHMExqUmp6d3ZjRDQ9Iiwic3Ryb2tlQ29sb3IiOiIjNGRiNzI1Iiwic3Ryb2tlV2lkdGgiOjIsInN0cm9rZU9wYWNpdHkiOjEsImZpbGxDb2xvciI6IiNmZjAwMDAiLCJmaWxsT3BhY2l0eSI6MC41LCJyYWRpdXMiOjExMS4zODAyNTA0MDIyNTQxNiwiekluZGV4Ijo1fSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOls2NS41NjM2MTcsNTcuMTQ4MTcyXX0sImlkIjoyMDMyfSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJkZXNjcmlwdGlvbiI6IlBIQSswSnJRdnRDOTBMclJnOUdBMExYUXZkR0cwTGpSanp3dmNEND0iLCJzdHJva2VDb2xvciI6IiM0ZGI3MjUiLCJzdHJva2VXaWR0aCI6Miwic3Ryb2tlT3BhY2l0eSI6MSwiZmlsbENvbG9yIjoiI2ZkMDEwMSIsImZpbGxPcGFjaXR5IjowLjUsInJhZGl1cyI6MTEwLjU3ODk2NDY2MDM3NjQ3LCJ6SW5kZXgiOjZ9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzY1LjU2OTY0Niw1Ny4xNTEwNzFdfSwiaWQiOjIwNTh9LHsidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImRlc2NyaXB0aW9uIjoiUEhBKzBKclF2dEM5MExyUmc5R0EwTFhRdmRHRzBMalJqend2Y0Q0PSIsInN0cm9rZUNvbG9yIjoiIzRkYjcyNSIsInN0cm9rZVdpZHRoIjoyLCJzdHJva2VPcGFjaXR5IjoxLCJmaWxsQ29sb3IiOiIjZmYwMDAwIiwiZmlsbE9wYWNpdHkiOjAuNSwicmFkaXVzIjo5Ni41NDkyNDI1NzkyOTUxNSwiekluZGV4Ijo3fSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOls2NS41NTAwOTgsNTcuMTU1NTYzXX0sImlkIjoyMTM0fSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJkZXNjcmlwdGlvbiI6IlBIQSswSnJRdnRDOTBMclJnOUdBMExYUXZkR0cwTGpSanp3dmNEND0iLCJzdHJva2VDb2xvciI6IiM0ZGI3MjUiLCJzdHJva2VXaWR0aCI6Miwic3Ryb2tlT3BhY2l0eSI6MSwiZmlsbENvbG9yIjoiI2ZmMDAwMCIsImZpbGxPcGFjaXR5IjowLjUsInJhZGl1cyI6ODIuMzgwMDk4MjE4MjAwMDksInpJbmRleCI6OH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbNjUuNTU0NjI2LDU3LjE1MzEwN119LCJpZCI6MjM0NH1dLCJtYXBQb3NpdGlvbiI6eyJsYXQiOjU3LjE1MDkwNzY3NzU4NTQzLCJsb24iOjY1LjU2MzQwMjE3NTkwMzMzLCJ6b29tIjoxNX0sImlzV2hlZWxab29tRW5hYmxlZCI6dHJ1ZX0nKTwvc2NyaXB0PjxzY3JpcHQgYXN5bmM9IiIgc3JjPSJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndGFnL2pzP2lkPUctVDg2S01EMDNDNyI+PC9zY3JpcHQ+PHNjcmlwdCBpZD0iZ29vZ2xlLWFuYWx5dGljcyI+CiAgICAgIHdpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVyIHx8IFtdOwogICAgICBmdW5jdGlvbiBndGFnKCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKTt9CiAgICAgIGd0YWcoJ2pzJywgbmV3IERhdGUoKSk7CiAgICAgIGd0YWcoJ2NvbmZpZycsICdHLVQ4NktNRDAzQzcnLCB7ImNvb2tpZV9mbGFncyI6IlNhbWVTaXRlPU5vbmU7IFNlY3VyZTsgUGFydGl0aW9uZWQiLCJjb29raWVfdXBkYXRlIjpmYWxzZX0pOwogICAgICB0cnVlICYmIGd0YWcoJ2V2ZW50JywgJ2Zyb21faWZyYW1lJyk7CiAgICA8L3NjcmlwdD48L2JvZHk+")</script>
+
+    </main>
+</div>
+<a href="статистика.html" class="my-button">Продолжить.</a> 
+</div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PBA. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный бизнес-ассистент PBA</title>
+    <link rel="stylesheet" href="css/stttt.css">
+    <style>
+        .buttons-and-chart {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin: 20px 0; 
+        }
+
+        .toggle {
+            display: flex; 
+            justify-content: center; 
+            margin-bottom: 10px; 
+        }
+
+        .chart-description {
+            text-align: center; 
+            margin-top: 10px;  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/img/logo2.png" alt="Логотип PBA">
+                    PBA
+                </a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="услуги.html">Отзывы</a></li>
+                    <li><a href="о_нас.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="buttons-and-chart">
+        <div class="toggle">
+            <button class="toggle-button active" data-type="expenses">Расходы</button>
+            <button class="toggle-button" data-type="income">Доходы</button>
+        </div>
+    
+        <div class="chart-container">
+        </div>
+        <div class="chart-description">
+            <h3>Описание:</h3>
+            <ul id="description-list">
+            </ul>
+        </div>
+    
+        <div class="chart-description">
+
+        </div>
+    </div>
+        <footer>
+            <div class="container">
+                <a href="отзывы.html" class="button-to-another-page">
+                    Мне все нравится!
+                </a>
+            </div>
+        </footer>
+    <script src="/JS/script4.js"></script>
+</body>
+</html>
