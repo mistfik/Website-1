@@ -337,7 +337,7 @@ nav a:hover {
     display: block; /* Показываем кнопку-гамбургер на маленьких экранах */
     cursor: pointer;
     padding: 10px;
-    background-color: #333; /* Пример фона */
+    background-color: #000000; /* Пример фона */
     color: white;
     border-radius: 5px;
     margin-bottom: 10px;
