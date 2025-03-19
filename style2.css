@@ -298,6 +298,33 @@ nav a:hover {
 
 
   
+.blur-text {
+    filter: blur(5px); 
+    -webkit-filter: blur(5px); 
+    transition: filter 0.3s ease; 
+}
+
+
+
+.pro-version-button {
+    background-color: #2d049e9a; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+.pro-version-button:hover {
+    background-color: #3e8e41; 
+}
+
 
  
 
