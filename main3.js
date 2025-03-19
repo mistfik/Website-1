@@ -8,40 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-
-    const fullscreenSliderContainer = document.querySelector('.fullscreen-slider-container');
-    const fullscreenSliderWrapper = document.querySelector('.fullscreen-slider-wrapper');
-    const fullscreenSlides = document.querySelectorAll('.fullscreen-slide');
-    const fullscreenPrevButton = document.querySelector('.fullscreen-slider-arrow.prev');
-    const fullscreenNextButton = document.querySelector('.fullscreen-slider-arrow.next');
-
-    let fullscreenSlideWidth = fullscreenSliderContainer.offsetWidth;
-    let fullscreenSlideIndex = 0;
-
-    function fullscreenSlideTo(index) {
-        fullscreenSliderWrapper.style.transform = `translateX(-${index * fullscreenSlideWidth}px)`;
-    }
-
-    fullscreenPrevButton.addEventListener('click', () => {
-        fullscreenSlideIndex = (fullscreenSlideIndex > 0) ? fullscreenSlideIndex - 1 : fullscreenSlides.length - 1;
-        fullscreenSlideTo(fullscreenSlideIndex);
-    });
-
-    fullscreenNextButton.addEventListener('click', () => {
-        fullscreenSlideIndex = (fullscreenSlideIndex < fullscreenSlides.length - 1) ? fullscreenSlideIndex + 1 : 0;
-        fullscreenSlideTo(fullscreenSlideIndex);
-    });
-
-    window.addEventListener('resize', () => {
-        fullscreenSlideWidth = fullscreenSliderContainer.offsetWidth;
-        fullscreenSlideTo(fullscreenSlideIndex);
-    });
-
-    window.addEventListener('resize', () => {
-        fullscreenSlideWidth = fullscreenSliderContainer.offsetWidth;
-        fullscreenSlideTo(fullscreenSlideIndex); // Пересчитываем позицию слайда при изменении размера
-    });
-
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
     const prevButton = document.querySelector('.slider-prev');
@@ -55,10 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (index >= slides.length) {
             slideIndex = 0;
         } else {
-            slideIndex = index;
+            slideIndex = index; 
         }
 
+       
         slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+
     }
 
     if (prevButton && nextButton) {
@@ -72,4 +40,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
         showSlide(slideIndex);
     }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('emailForm');
+    const formMessage = document.getElementById('formMessage');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        const email = document.getElementById('email').value;
+
+        // Проверка формата email (простейшая)
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            formMessage.textContent = 'Пожалуйста, введите корректный email.';
+            formMessage.className = 'form-message error';
+            return;
+        }
+
+        formMessage.textContent = 'Спасибо! Мы свяжемся с вами.';
+        formMessage.className = 'form-message'; 
+        form.reset();  
+});
 });
